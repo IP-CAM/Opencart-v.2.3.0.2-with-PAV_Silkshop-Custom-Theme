@@ -7051,6 +7051,7 @@ header, .container {
   margin-bottom: 30px;
   background: #47494e url("../image/breadcrumb.png") no-repeat center bottom;
   padding: 95px 30px;
+  background-attachment: fixed;
 }
 .breadcrumb .breadcrumb-heading {
   margin: 0;
@@ -11767,4 +11768,7 @@ ul.menu li {
   .topbar-v5 .top-link {
     width: 100%;
   }
+}
+div.pav-container.pts-parallax{
+  background-attachment: fixed;
 }

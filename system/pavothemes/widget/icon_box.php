@@ -175,25 +175,6 @@ class PtsWidgetIcon_box extends PtsWidgetPageBuilder {
 			$url = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? HTTPS_SERVER : HTTP_SERVER;
 	        $url .= 'image/';
 			$setting = array_merge( $t, $setting );
-			//toDo my changies
-            $setting['htmlcontent_1'] = str_ireplace('sewing','pet',$setting['htmlcontent_1']);
-            $setting['htmlcontent_1'] = str_ireplace('Browse now, your wardrobe will thank you for it later','Keep your pet healthy and happy',$setting['htmlcontent_1']);
-
-            switch ($setting['iconfile']) {
-                case "catalog/demo/icon/icon_4.png":
-                    $setting['htmlcontent_1'] = str_ireplace('Mei ludus efficiendi seasum temporibus vix ex. Ius ad labores dissen','Goods ordered from Truepetdepot.com are delivered directly from our warehouse to the delivery address specified by the customer',$setting['htmlcontent_1']);
-                    break;
-                case "catalog/demo/icon/icon_3.png":
-                    $setting['htmlcontent_1'] = str_ireplace('Mei ludus efficiendi seasum temporibus vix ex. Ius ad labores dissen','As an OnlineShop customer, Truepetdepot.com offers you the convenient payment methods',$setting['htmlcontent_1']);
-                    break;
-                case "catalog/demo/icon/icon_2.png":
-                    $setting['htmlcontent_1'] = str_ireplace('Mei ludus efficiendi seasum temporibus vix ex. Ius ad labores dissen','Truepetdepot.com takes great pride in offering a safe and secure online shopping experience',$setting['htmlcontent_1']);
-                    break;
-                case "catalog/demo/icon/icon_1.png":
-                    $setting['htmlcontent_1'] = str_ireplace('Mei ludus efficiendi seasum temporibus vix ex. Ius ad labores dissen','24-hour multi-lingual tech support',$setting['htmlcontent_1']);
-                    break;
-            }
-
             $languageID = $this->config->get('config_language_id');
 			$setting['htmlcontent'] = isset($setting['htmlcontent_'.$languageID])?($setting['htmlcontent_'.$languageID]): '';
 			$settizng['linkurl'] = isset($setting['linkurl_'.$languageID])?($setting['linkurl_'.$languageID]): '';

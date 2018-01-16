@@ -16,11 +16,6 @@
               <div class="quickview hidden-xs hidden-sm">
                   <a class="iframe-link btn quick-view" data-toggle="tooltip" data-placement="top" href="<?php echo $ourl->link('themecontrol/product','product_id='.$product['product_id']);?>"  title="<?php echo $objlang->get('quick_view'); ?>" ><i class="fa fa-external-link"></i></a>
               </div>
-              <div class="zoom hidden-xs hidden-sm">
-                  <?php if( isset($categoryPzoom) && $categoryPzoom ) { $zimage = str_replace( "cache/","", preg_replace("#-\d+x\d+#", "",  $product['thumb'] ));  ?>
-                  <a data-toggle="tooltip" data-placement="top" href="<?php echo $zimage;?>" class="product-zoom info-view colorbox cboxElement" title="<?php echo $product['name']; ?>"><i class="fa fa-search"></i></a>
-                  <?php } ?>
-              </div>
           </div>
       </div>
     <?php } ?>

@@ -78,7 +78,7 @@
         <div class="product-img img">
           <a class="img" title="<?php echo $product['name']; ?>" href="<?php echo $product['href']; ?>">
             <img class="img-responsive" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
-          </a>         
+          </a>
           <div class="quickview hidden-xs hidden-sm">
             <a class="iframe-link btn quick-view" data-toggle="tooltip" data-placement="top" href="<?php echo $ourl->link('themecontrol/product','product_id='.$product['product_id']);?>"  title="<?php echo $objlang->get('quick_view'); ?>" ><i class="fa fa-arrows-alt"></i><?php echo $objlang->get('quick_view'); ?></a>
           </div>
@@ -86,7 +86,7 @@
             <?php if( isset($categoryPzoom) && $categoryPzoom ) { $zimage = str_replace( "cache/","", preg_replace("#-\d+x\d+#", "",  $product['thumb'] ));  ?>
               <a data-toggle="tooltip" data-placement="top" href="<?php echo $zimage;?>" class="product-zoom info-view colorbox cboxElement" title="<?php echo $product['name']; ?>"><?php echo $objlang->get('text_zoom'); ?></a>
             <?php } ?>
-          </div> 
+          </div>
         </div>
       </div>
     <?php } ?>
